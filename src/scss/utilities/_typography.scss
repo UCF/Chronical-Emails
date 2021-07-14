@@ -1,5 +1,16 @@
 // scss-lint:disable all
 
+//
+// Font Family
+//
+
+.font-serif {
+  font-family: $font-family-serif;
+}
+
+.font-sans-serif {
+  font-family: $font-family-sans-serif;
+}
 
 //
 // Alignment
@@ -80,6 +91,9 @@
 //
 // Font color
 //
+.text-white {
+  color: $white;
+}
 .text-primary {
   color: $brand-primary;
 }

@@ -37,8 +37,22 @@
   }
 
   margin: auto;
-  min-width: $email-inner-width;
-  width: $email-inner-width;
+  min-width: 540px;
+  width: 540px;
+}
+
+// The firstmost inner tables, which should be padded at mobile sizes
+.container-inner-inner {
+  @include mobile-unset-border-x();
+  @include mobile-mq() {
+    margin: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  margin: auto;
+  min-width: 460px;
+  width: 460px;
 }
 
 // Generic class for a th or td that should collapse to 100% width at mobile sizes

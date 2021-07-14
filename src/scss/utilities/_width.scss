@@ -1,3 +1,15 @@
+.w-33 {
+  width: 33%;
+}
+
+.w-33-desktop {
+  width: 33%;
+
+  @include mobile-mq() {
+    width: 100% !important;
+  }
+}
+
 .w-50 {
   width: 50%;
 }
