@@ -29,11 +29,15 @@
 }
 
 .hr-black {
-  border-color: #000;
+  border-color: $black;
+}
+
+.hr-red {
+  border-color: $red;
 }
 
 .hr-default {
-  border-color: #ccc;
+  border-color: $gray-lighter;
 }
 
 .hr-primary {
@@ -46,4 +50,9 @@
 
 .hr-inverse {
   border-color: $white;
+}
+
+.divider-vertical {
+  min-width: 10px;
+  width: 10px;
 }
