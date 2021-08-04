@@ -1,20 +1,70 @@
-.background-white {
-    background-color: $white;
+.background-white,
+.bg-white {
+  background-color: $white;
 }
 
 
-.background-gold {
-    background-color: $ucf-gold;
+.background-gold,
+.bg-primary {
+  background-color: $ucf-gold;
 }
 
-.background-grey {
-    background-color: #f1f1f1;
+.background-grey,
+.bg-faded {
+  background-color: #f1f1f1;
 }
 
 .background-red {
-    background-color: $red;
+  background-color: $red;
 }
 
-.background-black {
-    background-color: $black;
+.bg-teal {
+  background-color: $teal;
+}
+
+.background-black,
+.bg-secondary {
+  background-color: $black;
+}
+
+//
+// NOTE: for black backgrounds (like the branded footer),
+// these classes are preferred vs .background-black--the inner
+// .bg-secondary-inner class helps fixed some color switching
+// stupidity in gmail that can render the address unreadable.
+//
+// USAGE:
+//
+// <body class="body">
+//   ...
+//   <table class="bg-secondary">
+//     <tbody><tr><td class="bg-secondary-inner">...</td></tr></tbody>
+//   </table>
+//   ...
+// </body>
+//
+.bg-secondary {
+  color: $white;
+
+  // Outer part of stupid gmail app hack to force white text
+  u + .body & {
+    mix-blend-mode: screen;
+  }
+}
+
+.bg-secondary-inner {
+  // Inner part of stupid gmail app hack to force white text
+  u + .body & {
+    background-color: $brand-secondary;
+    color: $white;
+    mix-blend-mode: difference;
+
+    a {
+      color: $white !important;
+    }
+  }
+
+  a {
+    color: $white !important;
+  }
 }

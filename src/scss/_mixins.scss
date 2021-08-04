@@ -7,6 +7,13 @@
   }
 }
 
+// Convenience mixin for defining media queries relative to $email-inner-width.
+@mixin mobile-sm-mq() {
+  @media (max-width: #{$email-inner-width}) {
+    @content;
+  }
+}
+
 
 // Mixins for resetting styles on responsive tables and columns at the
 // $email-width breakpoint.

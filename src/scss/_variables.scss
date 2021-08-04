@@ -1,24 +1,29 @@
 $gutter: 30px;
 $email-width: 640px;
-$email-inner-width: $email-width - ($gutter * 2);
+$email-inner-width: 540px;
+$email-footer-width: 415px;
 
 
 //
 // Colors
 //
-$ucf-gold:  #fc0;
-$white:     #fff;
-$black:     #000;
+$ucf-gold:  #ffcc00;
+$white:     #ffffff;
+$black:     #000000;
 $yellow:    $ucf-gold;
 $blue:      #0275d8;
 $blue-dark: #0262b6;
-$gray-lighter: #eee;
+$gray: #767676;
+$gray-light: #cccccc;
+$gray-lighter: #eeeeee;
 $gray-lightest: #fafafa;
 $red: #df544f;
+$teal: #007f77;
 
 $brand-primary:       $ucf-gold;
 $brand-secondary:     $black;
 $brand-complementary: $blue;
+$brand-default:       $gray;
 
 $body-bg: $white;
 $link-color: $blue-dark;
@@ -27,18 +32,8 @@ $link-color: $blue-dark;
 //
 // Fonts
 //
-$font-sans-serif: (
-  '400': (
-    'woff': '',
-    'woff2': ''
-  ),
-  '700': (
-    'woff': '',
-    'woff2': ''
-  )
-); // NOTE: needs manual update to function. Add direct URLs to external woff/woff2 files.
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-sans-serif: "UCF-Sans-Serif-Alt", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 
@@ -54,11 +49,15 @@ $lead-letter-spacing: -.025em;
 $small: 14px;
 
 $font-size-display-1: 120px;
+$font-size-display-1-mobile: 64px;
 $font-size-display-2: 100px;
+$font-size-display-2-mobile: 50px;
 $font-size-display-3: 80px;
+$font-size-display-3-mobile: 42px;
 $font-size-display-4: 60px;
+$font-size-display-4-mobile: 36px;
 $display-line-height: 1;
-$font-size-h1: 36px;
+$font-size-h1: 30px;
 $font-size-h2: 24px;
 $font-size-h3: 18px;
 $heading-line-height: 1.2;

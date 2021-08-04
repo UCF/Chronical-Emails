@@ -3,7 +3,6 @@
 //
 // Font Family
 //
-
 .font-serif {
   font-family: $font-family-serif;
 }
@@ -41,24 +40,40 @@
   font-size: $font-size-display-1;
   font-weight: bold;
   line-height: $display-line-height;
+
+  @include mobile-mq() {
+    font-size: $font-size-display-1-mobile !important;
+  }
 }
 
 .display-2 {
   font-size: $font-size-display-2;
   font-weight: bold;
   line-height: $display-line-height;
+
+  @include mobile-mq() {
+    font-size: $font-size-display-2-mobile !important;
+  }
 }
 
 .display-3 {
   font-size: $font-size-display-3;
   font-weight: bold;
   line-height: $display-line-height;
+
+  @include mobile-mq() {
+    font-size: $font-size-display-3-mobile !important;
+  }
 }
 
 .display-4 {
   font-size: $font-size-display-4;
   font-weight: bold;
   line-height: $display-line-height;
+
+  @include mobile-mq() {
+    font-size: $font-size-display-4-mobile !important;
+  }
 }
 
 .h1 {
@@ -102,6 +117,10 @@
   color: $brand-secondary;
 }
 
+.text-default {
+  color: $brand-default;
+}
+
 
 //
 // Other
@@ -116,4 +135,8 @@
 
 .text-underline {
   text-decoration: underline;
+}
+
+.font-italic {
+  font-style: italic;
 }

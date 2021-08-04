@@ -20,7 +20,7 @@
     width: 100% !important;
   }
 
-  margin: auto;
+  margin: 0 auto;
   min-width: $email-width;
   width: $email-width;
 }
@@ -31,14 +31,18 @@
   @include mobile-mq() {
     margin: 0 !important;
     min-width: 0 !important;
+    padding-left: ($email-width - $email-inner-width) / 2;
+    padding-right: ($email-width - $email-inner-width) / 2;
+    width: 100% !important;
+  }
+  @include mobile-sm-mq() {
     padding-left: $gutter / 2;
     padding-right: $gutter / 2;
-    width: 100% !important;
   }
 
   margin: auto;
-  min-width: 540px;
-  width: 540px;
+  min-width: $email-inner-width;
+  width: $email-inner-width;
 }
 
 // The firstmost inner tables, which should be padded at mobile sizes
@@ -79,4 +83,20 @@
 .column-2-2 {
   padding-left: $gutter / 2;
   width: 50%;
+}
+
+
+//
+// Email footer
+//
+.brand-footer-inner {
+  @include mobile-mq() {
+    max-width: 100% !important;
+    min-width: auto !important;
+    width: auto !important;
+  }
+
+  margin: auto;
+  min-width: $email-footer-width;
+  width: $email-footer-width;
 }
