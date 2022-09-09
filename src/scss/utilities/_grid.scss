@@ -76,13 +76,13 @@
 // Left-hand column (1 of 2) with gutter
 .column-2-1 {
   padding-right: $gutter * 0.5;
-  width: 50%;
+  width: calc($email-width / 2) - $gutter * 0.5;
 }
 
 // Right-hand column (2 of 2) with gutter
 .column-2-2 {
   padding-left: $gutter * 0.5;
-  width: 50%;
+  width: calc($email-width / 2) - $gutter * 0.5;
 }
 
 // Left-hand column (1 of 2) with gutter for 4/8 layout
